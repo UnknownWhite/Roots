@@ -18,8 +18,8 @@ public class EffectNaturesCure extends Effect {
 	public EffectNaturesCure(String name, boolean hasIcon) {
 		super(name, hasIcon);
 		MinecraftForge.EVENT_BUS.register(this);
-		f = ReflectionHelper.findField(PotionEffect.class, "duration");
-		f.setAccessible(true);
+		/*f = ReflectionHelper.findField(PotionEffect.class, "duration");
+		f.setAccessible(true);*/
 	}
 	
 	/**
@@ -35,7 +35,7 @@ public class EffectNaturesCure extends Effect {
 	
 	@Override
 	public void onTick(EntityLivingBase entity, int remainingDuration, NBTTagCompound data){
-		int level = data.getInteger("level");
+		/*int level = data.getInteger("level");
 		Collection<PotionEffect> effects = entity.getActivePotionEffects();
 		for (PotionEffect e : effects){
 			if (e.getPotion().isBadEffect()){
@@ -47,6 +47,6 @@ public class EffectNaturesCure extends Effect {
 					e1.printStackTrace();
 				}
 			}
-		}
+		}*/
 	}
 }
