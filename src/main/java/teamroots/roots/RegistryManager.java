@@ -75,7 +75,7 @@ public class RegistryManager {
 		blocks.add(runestone_brick = new BlockBase(Material.ROCK,SoundType.STONE,"runestone_brick",true).setIsFullCube(true).setIsOpaqueCube(true).setHardness(1.2f).setLightOpacity(15));
 		blocks.add(chiseled_runestone = new BlockBase(Material.ROCK,SoundType.STONE,"chiseled_runestone",true).setIsFullCube(true).setIsOpaqueCube(true).setHardness(1.2f).setLightOpacity(15));
 		blocks.add(fairy_dust = new BlockFairyDust(Material.CIRCUITS,SoundType.SNOW,"fairy_dust",true).setIsFullCube(false).setIsOpaqueCube(false).setBoundingBox(new AxisAlignedBB(0.3125,0.3125,0.3125,0.6875,0.6875,0.6875)).setHardness(0.1f).setLightOpacity(0).setLightLevel(1.0f));
-		blocks.add(offertory_plate = new BlockOffertoryPlate(Material.ROCK,SoundType.STONE,"offertory_plate",true).setIsFullCube(false).setIsOpaqueCube(false).setBoundingBox(new AxisAlignedBB(0.125,0.0,0.125,0.875,0.875,0.875)).setHardness(1.6f).setLightOpacity(0));
+		//blocks.add(offertory_plate = new BlockOffertoryPlate(Material.ROCK,SoundType.STONE,"offertory_plate",true).setIsFullCube(false).setIsOpaqueCube(false).setBoundingBox(new AxisAlignedBB(0.125,0.0,0.125,0.875,0.875,0.875)).setHardness(1.6f).setLightOpacity(0));
 		
 		items.add(moontinged_seed = new ItemMoonglowSeed("moontinged_seed",true));
 		items.add(moonglow_leaf = new ItemHerb("moonglow_leaf",true));
@@ -116,9 +116,9 @@ public class RegistryManager {
 		items.add(totem_fragment = new ItemSpiritHerb("totem_fragment",true));
 		items.add(book_base = new ItemBase("book_base",true));
 		items.add(ritual_book = new ItemBook("ritual_book",true, 4));
-		items.add(fairy_charm = new ItemFairyCharm("fairy_charm",true));
-		items.add(spritely_brew = new ItemSpritelyBrew("spritely_brew",true));
-		items.add(rift_wand = new ItemRiftWand("rift_wand",true));
+		//items.add(fairy_charm = new ItemFairyCharm("fairy_charm",true));
+		//items.add(spritely_brew = new ItemSpritelyBrew("spritely_brew",true));
+		//items.add(rift_wand = new ItemRiftWand("rift_wand",true));
 		
 		GameRegistry.registerWorldGenerator(worldGenStandingStones = new WorldGenStandingStones(), 100);
 		GameRegistry.registerWorldGenerator(worldGenHut = new WorldGenHut(), 101);

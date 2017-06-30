@@ -261,6 +261,35 @@ public class RecipeRegistry {
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(RegistryManager.book_base,1),new Object[]{
 				new ItemStack(RegistryManager.bark_birch,1),new ItemStack(RegistryManager.bark_birch,1),new ItemStack(RegistryManager.bark_birch,1),new ItemStack(Items.LEATHER,1)
 		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RegistryManager.herblore_book,1),true,new Object[]{
+				" P ",
+				"FBI",
+				" D ",
+				'P',Blocks.RED_FLOWER,
+				'D',Blocks.YELLOW_FLOWER,
+				'F',Items.FEATHER,
+				'I',new ItemStack(Items.DYE,1,0)
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RegistryManager.spellcraft_book,1),true,new Object[]{
+				" E ",
+				"FBI",
+				" M ",
+				'E',Items.FERMENTED_SPIDER_EYE,
+				'M',Items.MUTTON,
+				'F',Items.FEATHER,
+				'I',new ItemStack(Items.DYE,1,0)
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RegistryManager.spellcraft_book,1),true,new Object[]{
+				"MRT",
+				"FBI",
+				"TDM",
+				'R',RegistryManager.runestone,
+				'D',new ItemStack(Blocks.SAPLING,1,2),
+				'T',RegistryManager.terra_moss_ball,
+				'M',RegistryManager.moonglow_leaf,
+				'F',Items.FEATHER,
+				'I',new ItemStack(Items.DYE,1,0)
+		}));
 		
 		RecipeSorter.register("recipe_book_copying", RecipeBookCopying.class, Category.SHAPELESS, "");
 		RecipeSorter.register("recipe_powder_mash", RecipePowderMash.class, Category.SHAPELESS, "");
