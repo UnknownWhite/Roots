@@ -268,6 +268,7 @@ public class RecipeRegistry {
 				'P',Blocks.RED_FLOWER,
 				'D',Blocks.YELLOW_FLOWER,
 				'F',Items.FEATHER,
+				'B',RegistryManager.book_base,
 				'I',new ItemStack(Items.DYE,1,0)
 		}));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RegistryManager.spellcraft_book,1),true,new Object[]{
@@ -277,9 +278,10 @@ public class RecipeRegistry {
 				'E',Items.FERMENTED_SPIDER_EYE,
 				'M',Items.MUTTON,
 				'F',Items.FEATHER,
+				'B',RegistryManager.book_base,
 				'I',new ItemStack(Items.DYE,1,0)
 		}));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RegistryManager.spellcraft_book,1),true,new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RegistryManager.ritual_book,1),true,new Object[]{
 				"MRT",
 				"FBI",
 				"TDM",
@@ -288,6 +290,7 @@ public class RecipeRegistry {
 				'T',RegistryManager.terra_moss_ball,
 				'M',RegistryManager.moonglow_leaf,
 				'F',Items.FEATHER,
+				'B',RegistryManager.book_base,
 				'I',new ItemStack(Items.DYE,1,0)
 		}));
 		

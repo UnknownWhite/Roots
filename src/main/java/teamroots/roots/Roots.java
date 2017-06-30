@@ -22,7 +22,7 @@ public class Roots
 {
     public static final String MODID = "roots";
     public static final String MODNAME = "Roots";
-    public static final String VERSION = "0.022";
+    public static final String VERSION = "0.023";
 	public static final String DEPENDENCIES = "";
 	
     @SidedProxy(clientSide = "teamroots.roots.proxy.ClientProxy",serverSide = "teamroots.roots.proxy.ServerProxy")
